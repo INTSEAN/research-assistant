@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Research Assistant</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        width: 300px;
+      }
+      button {
+        margin: 5px;
+        padding: 5px 10px;
+      }
+      textarea {
+        width: 100%;
+        margin: 5px 0;
+      }
+      #papers {
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login-section">
+      <button id="login-button">Login with Google</button>
+    </div>
+    <div id="main-section" style="display: none">
+      <button id="logout-button">Logout</button>
+      <button id="fetch-papers">Fetch Recommended Papers</button>
+      <div id="papers"></div>
+      <textarea
+        id="notes"
+        rows="5"
+        placeholder="Enter your notes here"
+      ></textarea>
+      <button id="save-notes">Save to Drive</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
